@@ -1,7 +1,7 @@
 import "./App.css";
 import About from "./about/page";
 import Projects from "./projects/page";
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes, Link} from 'react-router-dom'
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
         <h1 className="text-3xl font-semibold">RG</h1>
 
         <ul className="flex gap-10  flex-row text-xs font-medium justify-end">
-          <li className="cursor-pointer "><a href="/">About me</a></li>
-          <li className="cursor-pointer"><a href="projects">Projects</a></li>
+          <li className="cursor-pointer "><Link to="/">About</Link></li>
+          <li className="cursor-pointer"><a href="projects"><Link to="projects">Projects</Link></a></li>
           <li className="cursor-pointer">Contact</li>
         </ul>
       </header>

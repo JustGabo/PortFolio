@@ -1,6 +1,10 @@
 import { Link } from "react-scroll";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+import PaperoHero from '../../public/paperohero.jpg'
+import PaperoSection from '../../public/paperosection.jpg'
+import PaperoSection2 from '../../public/paperosection2.jpg'
+import PaperoSection3 from '../../public/paperosection3.jpg'
 
 const Page = () => {
   return (
@@ -22,13 +26,13 @@ const Page = () => {
           <li className="cursor-pointer   py-3">
             <Link
               activeClass="active"
-              to="panteon"
+              to="papero"
               spy={true}
               smooth={true}
               offset={-90}
               duration={500}
             >
-              Panteon
+              Papero
             </Link>
           </li>
           <li className="cursor-pointer py-3">
@@ -46,13 +50,13 @@ const Page = () => {
           <li className="cursor-pointer py-3">
             <Link
               activeClass="active"
-              to="papero"
+              to="partner"
               spy={true}
               smooth={true}
               offset={-100}
               duration={500}
             >
-              Papero
+              Partner
             </Link>
           </li>
           <li className="cursor-pointer py-3">
@@ -70,14 +74,14 @@ const Page = () => {
         </ul>
       </section>
       <section className="ml-[180px] w-[100%] flex flex-col">
-        <article className="h-screen flex flex-col justify-center items-center">
-          <div className="mb-[100px] flex flex-col items-center gap-2">
+        <article className="h-96 flex flex-col justify-center items-center mb-32">
+          <div className="mb-[100px] flex flex-col items-center gap-2 pt-48">
             <h3 className="font-medium text-xl">
               Go Down To Take A Look To All My Projects
             </h3>
             <Link
               activeClass="active"
-              to="panteon"
+              to="papero"
               spy={true}
               smooth={true}
               offset={-90}
@@ -89,30 +93,30 @@ const Page = () => {
         </article>
 
         <article className="flex flex-col gap-20">
-          <div id="panteon" className="grid gap-6">
+          <div id="papero" className="grid gap-6">
             <div className="flex items-center gap-2">
-            <a className="text-xl" href="https://paperoweb-vevt.vercel.app/">Panteon</a>
+            <a className="text-xl" href="https://paperoweb-justgabo.vercel.app/" target="_blank" rel="noreferrer">Panteon</a>
             <ArrowTopRightOnSquareIcon className="w-4 aspect-square"></ArrowTopRightOnSquareIcon>
             </div>
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
               <img
                 className="rounded-lg object-cover"
-                src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
+                src={PaperoHero}
                 alt=""
               />
               <img
                 className="rounded-lg object-cover"
-                src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
+                src={PaperoSection}
                 alt=""
               />
               <img
                 className="rounded-lg object-cover"
-                src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
+                src={PaperoSection2}
                 alt=""
               />
               <img
                 className="rounded-lg object-cover"
-                src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
+                src={PaperoSection3}
                 alt=""
               />
             </div>
@@ -141,7 +145,7 @@ const Page = () => {
             />
           </div>
 
-          <div id="papero" className="grid grid-cols-2 grid-rows-2 gap-4">
+          <div id="partner" className="grid grid-cols-2 grid-rows-2 gap-4">
             <img
               className="rounded-lg object-cover"
               src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"

@@ -15,7 +15,7 @@ const Page = () => {
             offset={-100}
             duration={500}
           >
-            Projects
+            About
           </Link>
         </h2>
         <ul className="ul flex flex-col gap-2 w-[80%] text-xs font-medium ">
@@ -57,9 +57,9 @@ const Page = () => {
           </li>
         </ul>
       </section>
-      <section className="ml-[180px] pt-10 w-[100%] flex flex-col gap-20">
-        <article className="h-screen flex flex-col justify-center items-center">
-          <div className="mb-[100px] flex flex-col items-center gap-2">
+      <section className="ml-[180px] w-[100%] flex flex-col">
+        <article className="h-96 flex flex-col justify-center items-center mb-32">
+          <div className="mb-[100px] flex flex-col items-center gap-2 pt-48">
             <h3 className="font-medium text-xl">Go Down To Know Me More</h3>
             <Link
               activeClass="active"
