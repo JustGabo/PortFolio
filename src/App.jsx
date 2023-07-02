@@ -1,6 +1,8 @@
 import "./App.css";
+import "../src/main"
 import About from "./about/page";
 import Projects from "./projects/page";
+import Contact from './contact/page'
 import {Route, Routes, Link} from 'react-router-dom'
 
 function App() {
@@ -10,15 +12,15 @@ function App() {
         <h1 className="text-3xl font-semibold">RG</h1>
 
         <ul className="flex gap-10  flex-row text-xs font-medium justify-end">
-          <li className="cursor-pointer "><Link to="/">About</Link></li>
-          <li className="cursor-pointer"><a href="projects"><Link to="projects">Projects</Link></a></li>
-          <li className="cursor-pointer">Contact</li>
+        <li className="about pb-[2px] cursor-pointer hover:translate-y-[-5px] transition-all"><Link to="/">About</Link></li>
+        <li className="projects pb-[2px] cursor-pointer hover:translate-y-[-5px] transition-all"><Link to="projects">Projects</Link></li>
+        <li className="contact pb-[2px] cursor-pointer hover:translate-y-[-5px] transition-all"><Link to="contact">Contact</Link></li>
         </ul>
       </header>
       <Routes>
         <Route path="/" element={<About />}></Route>
         <Route path="projects" element={<Projects/>}></Route>
-        {/* <Route path="/" element={<About />}></Route> */}
+        <Route path="contact" element={<Contact/>}></Route>
       </Routes>
       
     </div>

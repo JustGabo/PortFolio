@@ -20,3 +20,7 @@
     border-bottom: 2px solid #0a3447;
     transition: .1s;
 }
+
+.selected{
+    border-bottom: 1px solid #52b5e3;
+}

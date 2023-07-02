@@ -1,10 +1,17 @@
 import { Link } from "react-scroll";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
-import PaperoHero from '../../public/paperohero.jpg'
-import PaperoSection from '../../public/paperosection.jpg'
-import PaperoSection2 from '../../public/paperosection2.jpg'
-import PaperoSection3 from '../../public/paperosection3.jpg'
+import PaperoHero from "../../public/paperohero.jpg";
+import PaperoSection from "../../public/paperosection.jpg";
+import PaperoSection2 from "../../public/paperosection2.jpg";
+import PaperoSection3 from "../../public/paperosection3.jpg";
+import JammyHero from "../../public/jammyHero.jpg";
+import JammyLogin from "../../public/jammylogin.jpg";
+import JammySignUp from "../../public/jammysignup.jpg";
+import JammyApp from "../../public/jammyapp.jpg";
+import FormCarryHero from "../../public/formcarryhero.jpg";
+import FormCarryLogIn from "../../public/formcarrylogin.jpg";
+import FormCarrySignUp from "../../public/formcarrysignup.jpg";
 
 const Page = () => {
   return (
@@ -38,25 +45,25 @@ const Page = () => {
           <li className="cursor-pointer py-3">
             <Link
               activeClass="active"
-              to="coffee"
+              to="jammy"
               spy={true}
               smooth={true}
               offset={-90}
               duration={500}
             >
-              Coffee
+              Jammy
             </Link>
           </li>
           <li className="cursor-pointer py-3">
             <Link
               activeClass="active"
-              to="partner"
+              to="formcarry"
               spy={true}
               smooth={true}
               offset={-100}
               duration={500}
             >
-              Partner
+              FormCarry
             </Link>
           </li>
           <li className="cursor-pointer py-3">
@@ -95,8 +102,15 @@ const Page = () => {
         <article className="flex flex-col gap-20">
           <div id="papero" className="grid gap-6">
             <div className="flex items-center gap-2">
-            <a className="text-xl" href="https://paperoweb-justgabo.vercel.app/" target="_blank" rel="noreferrer">Panteon</a>
-            <ArrowTopRightOnSquareIcon className="w-4 aspect-square"></ArrowTopRightOnSquareIcon>
+              <a
+                className="text-xl"
+                href="https://paperoweb-justgabo.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Panteon
+              </a>
+              <ArrowTopRightOnSquareIcon className="w-4 aspect-square"></ArrowTopRightOnSquareIcon>
             </div>
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
               <img
@@ -122,50 +136,63 @@ const Page = () => {
             </div>
           </div>
 
-          <div id="coffee" className="grid grid-cols-2 grid-rows-2 gap-4">
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
+          <div id="jammy" className="grid gap-6">
+            <div className="flex items-center gap-2">
+              <a
+                className="text-xl"
+                href="https://paperoweb-justgabo.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Jammy
+              </a>
+              <ArrowTopRightOnSquareIcon className="w-4 aspect-square"></ArrowTopRightOnSquareIcon>
+            </div>
+            <div className="grid grid-cols-2 grid-rows-2 gap-4">
+              <img className="rounded-lg object-cover" src={JammyHero} alt="" />
+              <img
+                className="rounded-lg object-cover"
+                src={JammyLogin}
+                alt=""
+              />
+              <img
+                className="rounded-lg object-cover"
+                src={JammySignUp}
+                alt=""
+              />
+              <img className="rounded-lg object-cover" src={JammyApp} alt="" />
+            </div>
           </div>
 
-          <div id="partner" className="grid grid-cols-2 grid-rows-2 gap-4">
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
+          <div id="formcarry" className="grid gap-6">
+            <div className="flex items-center gap-2">
+              <a
+                className="text-xl"
+                href="https://paperoweb-justgabo.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                FormCarry
+              </a>
+              <ArrowTopRightOnSquareIcon className="w-4 aspect-square"></ArrowTopRightOnSquareIcon>
+            </div>
+            <div className="grid grid-cols-2 grid-rows-2 gap-4">
+              <img
+                className="rounded-lg object-cover"
+                src={FormCarryHero}
+                alt=""
+              />
+              <img
+                className="rounded-lg object-cover"
+                src={FormCarryLogIn}
+                alt=""
+              />
+              <img
+                className="rounded-lg object-cover"
+                src={FormCarrySignUp}
+                alt=""
+              />
+            </div>
           </div>
 
           <div id="friends" className="grid grid-cols-2 grid-rows-2 gap-4">

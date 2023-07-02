@@ -91,7 +91,7 @@ const Page = () => {
                 </p>
 
                 <p className="text-base font-thin">
-                  Do prioritize usability and functionality over all things, but
+                  I do prioritize usability and functionality over all things, but
                   always trying to build beautiful work for you.
                 </p>
               </div>
@@ -146,6 +146,22 @@ const Page = () => {
                 <p>NodeJs</p>
               </div>
             </article>
+            {/* <article className="w-[95%] m-auto">
+              <ul className="flex gap-20">
+                <div>
+                <li className="list-disc">Figma</li>
+                <li className="list-disc">Javascript</li>
+                <li className="list-disc">NodeJs</li>
+                <li className="list-disc">HTML:5</li>
+                </div>
+                <div>
+                <li className="list-disc">Css</li>
+                <li className="list-disc">TailwindCss</li>
+                <li className="list-disc">TypeScript</li>
+                <li className="list-disc">React</li>
+                </div>
+              </ul>
+            </article> */}
           </section>
 
           <section
