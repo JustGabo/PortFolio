@@ -26,7 +26,7 @@ const Page = () => {
             offset={-90}
             duration={500}
           >
-            Projects
+            gay
           </Link>
         </h2>
         <ul className="ul flex flex-col gap-2 w-[80%] text-xs font-medium ">
