@@ -194,29 +194,6 @@ const Page = () => {
               />
             </div>
           </div>
-
-          <div id="friends" className="grid grid-cols-2 grid-rows-2 gap-4">
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-            <img
-              className="rounded-lg object-cover"
-              src="https://mensajero.com.ar/wp-content/uploads/2021/12/Aruba-2.jpg"
-              alt=""
-            />
-          </div>
         </article>
       </section>
     </div>
