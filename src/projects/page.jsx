@@ -1,17 +1,17 @@
 import { Link } from "react-scroll";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
-import PaperoHero from "../../public/paperohero.jpg";
-import PaperoSection from "../../public/paperosection.jpg";
-import PaperoSection2 from "../../public/paperosection2.jpg";
-import PaperoSection3 from "../../public/paperosection3.jpg";
-import JammyHero from "../../public/jammyHero.jpg";
-import JammyLogin from "../../public/jammylogin.jpg";
-import JammySignUp from "../../public/jammysignup.jpg";
-import JammyApp from "../../public/jammyapp.jpg";
-import FormCarryHero from "../../public/formcarryhero.jpg";
-import FormCarryLogIn from "../../public/formcarrylogin.jpg";
-import FormCarrySignUp from "../../public/formcarrysignup.jpg";
+import PaperoHero from "../imgs/paperohero.jpg";
+import PaperoSection from "../imgs/paperosection.jpg";
+import PaperoSection2 from "../imgs/paperosection2.jpg";
+import PaperoSection3 from "../imgs/paperosection3.jpg";
+import JammyHero from "../imgs/jammyHero.jpg";
+import JammyLogin from "../imgs/jammylogin.jpg";
+import JammySignUp from "../imgs/jammysignup.jpg";
+import JammyApp from "../imgs/jammyapp.jpg";
+import FormCarryHero from "../imgs/formcarryhero.jpg";
+import FormCarryLogIn from "../imgs/formcarrylogin.jpg";
+import FormCarrySignUp from "../imgs/formcarrysignup.jpg";
 
 const Page = () => {
   return (

@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
 import React from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import AboutImg from '../imgs/aboutImg.jpeg'
+
 
 const Page = () => {
   return (
@@ -99,8 +101,8 @@ const Page = () => {
 
             <div className="w-[80%] flex justify-center items-center">
               <img
-                className="w-[25em] aspect-square object-cover"
-                src="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2020/09/Madurez-emocional-7.jpg"
+                className="w-[25em] rounded-lg aspect-square object-cover"
+                src={AboutImg}
                 alt=""
               />
             </div>
