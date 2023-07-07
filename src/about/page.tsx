@@ -1,13 +1,12 @@
 import { Link } from "react-scroll";
 import React from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import AboutImg from '../imgs/aboutImg.jpeg'
-
+import AboutImg from "../imgs/aboutImg.jpeg";
 
 const Page = () => {
   return (
-    <div id="projects" className="flex mt-[70px] px-5">
-      <section className="fixed flex flex-col gap-20 border-r pt-10 border-gray-900 w-[12%] h-screen">
+    <div id="projects" className="flex flex-col md:flex-row mt-[70px] px-5">
+      <section className="fixed md:flex hidden items-start  flex-col justify-between md:gap-20 border-r pt-10 border-gray-900 w-[12%] h-screen">
         <h2 id="projects" className="font-semibold cursor-pointer text-xl">
           <Link
             activeClass="active"
@@ -20,7 +19,7 @@ const Page = () => {
             About
           </Link>
         </h2>
-        <ul className="ul flex flex-col gap-2 w-[80%] text-xs font-medium ">
+        <ul className="ul flex flex-row md:flex-col gap-10 md:gap-2 w-[100%] md:w-[80%] text-xs font-medium ">
           <li className="cursor-pointer   py-3">
             <Link
               activeClass="active"
@@ -59,26 +58,15 @@ const Page = () => {
           </li>
         </ul>
       </section>
-      <section className="ml-[180px] w-[100%] flex flex-col">
-        <article className="h-96 flex flex-col justify-center items-center mb-32">
-          <div className="mb-[100px] flex flex-col items-center gap-2 pt-48">
-            <h3 className="font-medium text-xl">Go Down To Know Me More</h3>
-            <Link
-              activeClass="active"
-              to="aboutme"
-              spy={true}
-              smooth={true}
-              offset={-90}
-              duration={500}
-            >
-              <ChevronDownIcon className="w-8 aspect-square cursor-pointer"></ChevronDownIcon>
-            </Link>
-          </div>
-        </article>
-
-        <article className="grid gap-32">
-          <section id="aboutme" className="flex items-center justify-between">
-            <div className="flex flex-col gap-10 w-[40%]">
+      <section className="md:ml-[15%] md:pr-[1em] mt-[2em] flex flex-col">
+        <article
+          className="grid gap-32"
+          data-aos="fade-in"
+          data-aos-anchor="#example-anchor"
+          data-aos-duration="2000"
+        >
+          <section id="aboutme" className="flex md:flex-row flex-col gap-10 items-center justify-between">
+            <div className="flex flex-col gap-10  md:w-[40%]">
               <h3 className="text-3xl">About me</h3>
 
               <div className="flex flex-col gap-5">
@@ -93,13 +81,13 @@ const Page = () => {
                 </p>
 
                 <p className="text-base font-thin">
-                  I do prioritize usability and functionality over all things, but
-                  always trying to build beautiful work for you.
+                  I do prioritize usability and functionality over all things,
+                  but always trying to build beautiful work for you.
                 </p>
               </div>
             </div>
 
-            <div className="w-[80%] flex justify-center items-center">
+            <div className="w-[100] flex justify-center ">
               <img
                 className="w-[25em] rounded-lg aspect-square object-cover"
                 src={AboutImg}
@@ -108,13 +96,20 @@ const Page = () => {
             </div>
           </section>
 
-          <section id="skills" className="grid gap-16">
+          <section
+            id="skills"
+            className="grid gap-16"
+            data-aos="fade-in"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="800"
+            data-aos-duration="1500"
+          >
             <h3 className="text-2xl  text-center">
               Now, all the technologies, languages and tools with which I have
               worked.
             </h3>
 
-            <article className="grid grid-cols-8 border-t-2 border-[#0a3447]">
+            <article className="hidden md:grid  grid-cols-8 border-t-2 border-[#0a3447]">
               <div className="flex flex-col items-center ">
                 <div className="w-[2px] h-[200px] bg-[#0a3447]"></div>
                 <p>HTML:5</p>
@@ -148,8 +143,9 @@ const Page = () => {
                 <p>NodeJs</p>
               </div>
             </article>
-            {/* <article className="w-[95%] m-auto">
-              <ul className="flex gap-20">
+
+            <article className="w-[95%] m-auto">
+              <ul className="flex justify-center gap-20">
                 <div>
                 <li className="list-disc">Figma</li>
                 <li className="list-disc">Javascript</li>
@@ -163,12 +159,16 @@ const Page = () => {
                 <li className="list-disc">React</li>
                 </div>
               </ul>
-            </article> */}
+            </article>
           </section>
 
           <section
             id="contact"
             className="flex flex-col items-center h-96 justify-center"
+            data-aos="fade-down"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="1500"
+            data-aos-duration="1000"
           >
             <div className="flex flex-col items-center justify-center gap-6 mb-32">
               <h3 className="text-center">
@@ -176,7 +176,7 @@ const Page = () => {
                 mind, just tell me about it.
               </h3>
               <button className="border-2 border-[#0a3447] w-[170px] rounded-md hover:bg-[#0a3447] transition-all">
-                <a className="inline-block w-[100%] leading-10" href="">
+                <a className="inline-block w-[100%] leading-10" href="mailto:ovallegabriel123@gmail.com">
                   Get it!
                 </a>
               </button>
