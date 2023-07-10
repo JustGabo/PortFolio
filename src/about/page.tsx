@@ -6,7 +6,7 @@ import AboutImg from "../imgs/aboutImg.jpeg";
 const Page = () => {
   return (
     <div id="projects" className="flex flex-col md:flex-row mt-[70px] px-5">
-      <section className="fixed md:flex hidden items-start  flex-col justify-between md:gap-20 border-r pt-10 border-gray-900 w-[12%] h-screen">
+      <section className="fixed md:flex hidden items-start  flex-col md:gap-20 border-r pt-10 border-gray-900 w-[12%] h-screen">
         <h2 id="projects" className="font-semibold cursor-pointer text-xl">
           <Link
             activeClass="active"
@@ -144,7 +144,7 @@ const Page = () => {
               </div>
             </article>
 
-            <article className="w-[95%] m-auto">
+            <article className="w-[95%] m-auto md:hidden">
               <ul className="flex justify-center gap-20">
                 <div>
                 <li className="list-disc">Figma</li>
