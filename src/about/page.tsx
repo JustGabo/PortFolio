@@ -144,7 +144,7 @@ const Page = () => {
               </div>
             </article>
 
-            <article className="w-[95%] m-auto">
+            <article className="w-[95%] m-auto md:hidden">
               <ul className="flex justify-center gap-20">
                 <div>
                 <li className="list-disc">Figma</li>

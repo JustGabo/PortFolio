@@ -65,7 +65,7 @@ const Page = () => {
               FormCarry
             </Link>
           </li>
-          <li className="cursor-pointer py-3">
+          {/* <li className="cursor-pointer py-3">
             <Link
               activeClass="active"
               to="friends"
@@ -76,7 +76,7 @@ const Page = () => {
             >
               Friends
             </Link>
-          </li>
+          </li> */}
         </ul>
       </section>
       <section className="md:ml-[15%] w-[100%] md:pr-[1em] gap-[20px] overflow-hidden flex z-0 flex-col">
@@ -95,30 +95,30 @@ const Page = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <img
-                data-aos="fade-down"
+                data-aos="fade-in"
                 data-aos-anchor="#example-anchor"
                 data-aos-offset="500"
-                data-aos-duration="1000"
+                data-aos-duration="1500"
                 className="rounded-lg object-cover md:col-span-2"
                 src={PaperoHero}
                 alt=""
               />
               <img
-                data-aos="fade-right"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover"
                 src={PaperoSection}
                 alt=""
               />
               <img
-                data-aos="fade-left"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover"
                 src={PaperoSection2}
                 alt=""
               />
               <img
-                data-aos="fade-up"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover md:col-span-2"
                 src={PaperoSection3}
@@ -141,7 +141,7 @@ const Page = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <img
-                data-aos="zoom-in-down"
+                data-aos="fade-in"
                 data-aos-anchor="#example-anchor"
                 data-aos-offset="1500"
                 data-aos-duration="1000"
@@ -150,21 +150,21 @@ const Page = () => {
                 alt=""
               />
               <img
-                data-aos="zoom-in-right"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover "
                 src={JammyLogin}
                 alt=""
               />
               <img
-                data-aos="zoom-in-left"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover"
                 src={JammySignUp}
                 alt=""
               />
               <img
-                data-aos="zoom-in-up"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover md:col-span-2"
                 src={JammyApp}
@@ -187,23 +187,23 @@ const Page = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <img
-                data-aos="flip-up"
+                data-aos="fade-in"
                 data-aos-anchor="#example-anchor"
-                data-aos-offset="2700"
+                data-aos-offset="2500"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover md:col-span-2"
                 src={FormCarryHero}
                 alt=""
               />
               <img
-                data-aos="flip-right"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover"
                 src={FormCarryLogIn}
                 alt=""
               />
               <img
-                data-aos="flip-left"
+                data-aos="fade-in"
                 data-aos-duration="1000"
                 className="rounded-lg object-cover"
                 src={FormCarrySignUp}
